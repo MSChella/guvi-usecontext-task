@@ -7,7 +7,7 @@ export default function CartCard({ data = {} }) {
             <div className="card-body">
                 <div className="row">
                     <div className="col-2">
-                        <img className="cart-item-image" src={data.image} />
+                        <img className="cart-item-image" src={data.image} alt="image" />
                     </div>
                     <div className="col-3">
                         <h6 className="text-w-bold">{data.name}</h6>
