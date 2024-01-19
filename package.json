@@ -19,51 +19,49 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
-
-    "module.exports" : {
-
-      "eslintConfig": {
-        "extends": [
-          "react-app",
-          "react-app/jest"
-        ]},
-    
-       "rules" : {
-          "no-unused-vars": "warn",
-          "jsx-a11y/anchor-is-valid": ["error", {
-           " components": ["App", "MainPageCard"],
-            "specialLink": ["#!"]
-          }]
-        }
-      
-    },
-
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   },
-
-"devDependencies": {
-  "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-  "@types/react": "^18.2.43",
-  "@types/react-dom": "^18.2.17",
-  "eslint": "^8.55.0",
-  "eslint-plugin-react": "^7.33.2",
-  "eslint-plugin-react-hooks": "^4.6.0",
-  "eslint-plugin-react-refresh": "^0.4.5"
- 
- }}
+  "module.exports": {
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          " components": [
+            "App",
+            "MainPageCard"
+          ],
+          "specialLink": [
+            "#!"
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "browserslist": "^4.22.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  }
+}
