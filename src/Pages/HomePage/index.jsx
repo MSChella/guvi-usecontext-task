@@ -28,6 +28,9 @@ export default function Home() {
 
 
     function addToCart(data = {}) {
+        updateCart([...cartItems, { ...data, quantity: 1 }]);
+
+
         // const cartCopy = [...cartItems, { ...data, quantity: 1 }];
         // let cartCopy = [...cartItems];
         // cartCopy.push({ ...data, quantity: 1 });
@@ -43,12 +46,8 @@ export default function Home() {
         console.log("clicked", cartItems, cartItems.length)
         console.table(cartItems)
 
-        updateCart([...cartItems, { ...data, quantity: 1 }]);
-
 
     }
-
-
 
 
     return (
