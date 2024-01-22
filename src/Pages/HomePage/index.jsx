@@ -30,7 +30,7 @@ export default function Home() {
     function addToCart(data = {}) {
         // const cartCopy = [...cartItems, { ...data, quantity: 1 }];
         let cartCopy = [...cartItems];
-        cartCopy.push(data);
+        cartCopy.push({ ...data, quantity: 1 });
 
         updateCart(cartCopy);
 
@@ -41,6 +41,7 @@ export default function Home() {
         //     return updateCart; 
         // });
         console.log("clicked", cartCopy, cartItems, cartItems.length)
+        console.table(cartCopy)
 
         // updateCart([...cartItems, { ...data, quantity: 1 }]);
 
